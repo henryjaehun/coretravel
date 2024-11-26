@@ -15,7 +15,7 @@ public class MsgGenerateController {
 
     //겟 요청으로 서비스레이어의 generateMSG메서드 호, 입력인자로 다섯가지 받음
     //그후 리턴은 서비스클래스의 메소드로
-    private String generateMessage(
+    public String generateMessage(
             @RequestParam String clientName,
             @RequestParam String tourDate,
             @RequestParam String pickupTime,

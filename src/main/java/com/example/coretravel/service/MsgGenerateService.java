@@ -34,7 +34,7 @@ public class MsgGenerateService {
         // 레포지토리에서 이름으로정보조회함
 
         // 없을 경우 예외처리
-        return guideRepository.findByName(guideName)
+        return guideRepository.findByGuidename(guideName)
                 .orElseThrow(() -> new RuntimeException("Guide not found for name: " + guideName));
 
     }
